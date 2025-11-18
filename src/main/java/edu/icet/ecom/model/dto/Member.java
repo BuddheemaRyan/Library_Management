@@ -2,6 +2,7 @@ package edu.icet.ecom.model.dto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 
 @Getter
@@ -11,6 +12,7 @@ import lombok.*;
 @ToString
 
 @Entity
+@Table(name ="Member")
 public class Member {
 @Id
     private String id;
